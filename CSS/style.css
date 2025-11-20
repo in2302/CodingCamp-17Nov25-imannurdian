@@ -1,0 +1,311 @@
+/* style.css - Single CSS File (Termasuk Responsive Design dan Portfolio) */
+
+:root {
+    --primary-color: #0056b3; /* Dark Blue */
+    --secondary-color: #f8f9fa; /* Light Gray */
+    --text-color: #333;
+    --white: #fff;
+    --error-color: #dc3545;
+}
+
+/* Base Styles & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #004085;
+}
+
+/* --- Main Content Sections --- */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Home Section (Hero) */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.welcome-message {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Profile Section */
+.banner-photo {
+    height: 200px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    /* Properti placeholder text dihapus */
+}
+
+.content-card {
+    background: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.content-card ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+/* --- Portfolio Section --- */
+.portfolio-section {
+    padding: 40px 0;
+}
+
+.portfolio-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Mobile default */
+}
+
+.project-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-image {
+    height: 150px;
+    background-color: #e9e9e9;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #004085;
+}
+
+/* --- Form Section --- */
+.contact-form {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.error-text {
+    color: var(--error-color);
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block; 
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004085;
+}
+
+/* Submission Output */
+.output-card {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9f0f7;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+.output-card p {
+    white-space: pre-wrap; 
+    font-family: monospace;
+}
+
+
+/* --- Footer (Rata Tengah) --- */
+footer {
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center; /* Rata Tengah */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* --- Responsive Design (Mobile-first approach with Desktop adjustments) --- */
+@media (min-width: 768px) {
+    /* Adjustments for Tablets and Desktops */
+
+    .navbar {
+        padding: 15px 50px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .hero-section {
+        padding: 80px 40px;
+    }
+
+    .welcome-message {
+        font-size: 3em;
+    }
+
+    .profile-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .profile-section h2, .banner-photo {
+        grid-column: 1 / -1; 
+        text-align: center;
+    }
+    
+    .banner-photo {
+        height: 300px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .form-section {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-section h2 {
+        /* PROPERTI BARU: Membuat judul rata tengah */
+        text-align: center; 
+        margin-bottom: 15px; 
+        color: var(--primary-color);
+    }
+
+    .portfolio-intro {
+        text-align: center; /* Properti ini sudah ada, memastikan rata tengah */
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        color: var(--text-color);
+    }
+}
