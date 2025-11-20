@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - IN23 Corp</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">IN23 Corp</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1 class="welcome-message">Hi, <span id="userName">User</span>!</h1> <p>Welcome to the official website of IN23 Corp.</p>
+        </section>
+
+        <section id="profile" class="profile-section">
+            <div class="banner-photo" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+            </div>
+            <h2>Our Profile</h2>
+
+            <div class="content-card">
+                <h3>About Us</h3> <p>Founded in 2020, IN23 Corp is dedicated to delivering cutting-edge software solutions. We believe in innovation, quality, and putting our clients first. Our team consists of highly skilled engineers and creative designers.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>Vision & Mission</h3> <h4>Vision</h4>
+                <p>To be the global leader in sustainable technology and innovative software development.</p>
+                <h4>Mission</h4>
+                <ul>
+                    <li>Deliver high-quality, reliable, and user-friendly products.</li>
+                    <li>Foster a culture of continuous learning and growth.</li>
+                    <li>Contribute positively to the technological advancement of society.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2>Portofolio</h2>
+
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                        </div>
+                    <h3>Project Alpha: E-commerce Platform</h3>
+                    <p>A scalable, high-performance platform for global retail operations, featuring custom inventory management and secure payment gateways.</p>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                        </div>
+                    <h3>Project Beta: Health & Fitness App</h3>
+                    <p>Designed and developed a cross-platform mobile application focusing on user-friendly health tracking and personalized workout plans.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                        </div>
+                    <h3>Project Gamma: Corporate Website Redesign</h3>
+                    <p>Complete redesign and technical SEO optimization for a B2B service provider, resulting in a 40% increase in lead generation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="form-section">
+            <h2>Message Us</h2>
+            <form id="inquiryForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <small class="error-text" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <small class="error-text" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                    <small class="error-text" id="phoneError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                    <small class="error-text" id="messageError"></small>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="submissionOutput" class="output-card">
+                <h3>Your Message Details:</h3>
+                <p>Data will appear here after submission.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IN23 Corps. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
